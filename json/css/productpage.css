@@ -27,7 +27,7 @@
    
 }
 .section-padding{
-    background: url(/images/home-slide-3-1920x800.jpg);
+    background: url(../images/home-slide-3-1920x800.jpg);
 }
 .product-card:hover {
     transform: translateY(-5px);
