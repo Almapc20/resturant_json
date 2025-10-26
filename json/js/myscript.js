@@ -14,24 +14,30 @@ function scrollFunction(){
     
 
 
-    // change style when hover caption
 
-const captionstyle = document.querySelectorAll(".caption");
 
-captionstyle.forEach(caption => {
-    caption.addEventListener("mouseover",() => {
-        caption.style.clipPath = " none " ;
-        caption.style.textAlign = "center";
-        
 
-      
+// change style when hover caption
+function setupHoverEffects() {
+    const captionstyle = document.querySelectorAll(".caption");
+
+    captionstyle.forEach(caption => {
+        caption.addEventListener("mouseover",() => {
+            caption.style.clipPath = "none";
+            caption.style.textAlign = "center";
+        });
+
+        caption.addEventListener("mouseout", () => {
+            caption.style.clipPath = "polygon(0 50%, 100% 0, 100% 100%, 0 100%)";
+            caption.style.textAlign = "right";
+        });
     });
+}
 
-    caption.addEventListener("mouseout", () => {
-        caption.style.clipPath = " polygon(0 50%, 100% 0, 100% 100% ,0 100%)";
-        caption.style.textAlign = "right";
-       
-    });
+
+document.addEventListener('DOMContentLoaded', function() {
+   
+    setTimeout(setupHoverEffects, 100);
 });
 
 // ************************************************************************

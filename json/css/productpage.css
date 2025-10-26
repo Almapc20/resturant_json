@@ -28,6 +28,7 @@
 }
 .section-padding{
     background: url(../images/home-slide-3-1920x800.jpg);
+    height: 300px;
 }
 .product-card:hover {
     transform: translateY(-5px);
@@ -48,8 +49,12 @@
 .product-name {
     font-family: "secondary-font";
     
-    color: #ffffff;
+  
     margin-bottom: 10px;
+}
+.product-name a:hover {
+    background-color: blue !important;
+    color: white !important;
 }
 
 .product-price {
