@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="stylesheet" href="css/cart.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.0.96/css/materialdesignicons.min.css">
+   
 </head>
 
 <body onscroll="ChangeScrollY()">
@@ -101,11 +104,14 @@
                 </li>
             </ul>
             <div class="navbar-shop">
-                <a href="#" class="link link-shop link-default">
-                    <span class="icon icon-sm mdi mdi-cart-outline"></span>
-                    <span class="text-white">(2)</span>
-                </a>
+                <a href="cart.html" class="link link-shop link-default" id="cartIcon">
+                    <div class="cart-icon-wrapper">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </div>
             </div>
+                </a>
+                
         </div>
     </div>
     <!-- End Header -->
@@ -203,7 +209,10 @@
 
 
     <script src="js/myscript.js"></script>
-    <script src="js/jsonscript.js"></script>
+   
+    <script src="js/cart.js"></script>
+     <script src="js/jsonscript.js"></script>
+    <script src="js/product-single.js"></script>
 </body>
 
 </html>

@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>صفحه محصول</title>
     <link rel="stylesheet" href="css/productpage.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="css/mystyle.css">
+     <link rel="stylesheet" href="css/cart.css">
+
 </head>
 <body onscroll="ChangeScrollY()">
   
@@ -101,10 +103,16 @@
                     <a class="link" href="#">اخبار</a>
                 </li>
             </ul>
+
+
             <div class="navbar-shop">
-                <a href="#" class="link link-shop link-default">
-                    <span class="icon icon-sm mdi mdi-cart-outline"></span>
-                    <span class="text-white">(2)</span>
+           
+
+                <a href="cart.html" class="link link-shop link-default" id="cartIcon">
+                <div class="cart-icon-wrapper">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </div>
                 </a>
             </div>
         </div>
@@ -121,11 +129,21 @@
         <div>
             <div id="product-container">
                 <!-- محتوای محصول -->
+
+                <div class="add-to-cart-section" id="addToCartSection" style="display: none;">
+                    <button class="add-to-cart-btn" id="addToCartBtn" disabled>
+                        <i class="fa fa-shopping-cart"></i>
+                        افزودن به سبد خرید
+                    </button>
+                </div>
+
             </div>
         </div>
     </section>
 
     <script src="js/myscript.js"></script>
+    <script src="js/cart.js"></script>
     <script src="js/product-single.js"></script>
+    
 </body>
 </html>

@@ -578,6 +578,128 @@ html *:last-child {
 }
 
 
+/* استایل‌های سبد خرید */
+.cart-icon {
+    position: relative;
+    display: inline-block;
+    color: #333;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+/* استایل‌های صفحه محصول */
+.size-options {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.size-option {
+    padding: 12px 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s;
+    min-width: 100px;
+    text-align: center;
+}
+
+.size-option:hover {
+    border-color: #ff6b6b;
+}
+
+.size-option.active {
+    border-color: #ff6b6b;
+    background: #fff5f5;
+}
+
+.size-name {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.size-price {
+    display: block;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.add-to-cart-section {
+    margin: 30px 0;
+}
+
+.add-to-cart-btn {
+    padding: 15px 30px;
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.3s;
+}
+
+.add-to-cart-btn:hover:not(:disabled) {
+    background: #ff4757;
+}
+
+.add-to-cart-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+/* نوتیفیکیشن */
+.notification {
+    position: fixed;
+    
+    transform: translateX(-50%);
+    background: #2ed573;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    z-index: 1000;
+    animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translate(-50%, 100%);
+        opacity: 0;
+    }
+    to {
+        transform: translate(-50%, 0);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
 .main-food-box .main-foods .food-box .title {
   position: absolute;
   padding-right: 20px;
