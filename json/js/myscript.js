@@ -1,43 +1,33 @@
-//  full size navbar when scroll
-
-window.onscroll=function(){scrollFunction()};
-
-function scrollFunction(){
-        if (document.body.scrollTop>80 ,document.documentElement.scrollTop>80){
-            document.getElementById("navbar-box").style.background="#f16121";
-    
-        }
-        else{
-            document.getElementById("navbar-box").style.background="none"
-        }
+function ChangeScrollY() {
+    if (window.scrollY >= 100) {
+        document.getElementById("navbar-box").style.background = "#f16121";
+    } else if (window.scrollY < 100) {
+        document.getElementById("navbar-box").style.background = "transparent";
     }
-    
-
-
-
-
-
-// change style when hover caption
-function setupHoverEffects() {
-    const captionstyle = document.querySelectorAll(".caption");
-
-    captionstyle.forEach(caption => {
-        caption.addEventListener("mouseover",() => {
-            caption.style.clipPath = "none";
-            caption.style.textAlign = "center";
-        });
-
-        caption.addEventListener("mouseout", () => {
-            caption.style.clipPath = "polygon(0 50%, 100% 0, 100% 100%, 0 100%)";
-            caption.style.textAlign = "right";
-        });
-    });
 }
 
+// ------------------------------------------------------------------------------------
+var myFunction1 = function() {
+    let caption_element = this.querySelector('.caption');
+    caption_element.style.transform = "rotate(0deg) scale(1.1)";
+    let title_element = caption_element.querySelector('.title');
+    title_element.style.transform = "rotate(0deg) scale(1.1)";
+    title_element.style.transform = "translate(-120px, 0px)";
+};
 
-document.addEventListener('DOMContentLoaded', function() {
-   
-    setTimeout(setupHoverEffects, 100);
+// ------------------------------------------------------------------------------------
+var myFunction2 = function() {
+    let caption_element = this.querySelector('.caption');
+    caption_element.style.transform = "rotate(-5deg) scale(1.1)";
+    let title_element = caption_element.querySelector('.title');
+    title_element.style.transform = "rotate(5deg) scale(1.1)";
+};
+
+// ------------------------------------------------------------------------------------
+document.addEventListener("DOMContentLoaded", function() {
+    var elements = document.getElementsByClassName("food-box");
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].addEventListener('mouseenter', myFunction1, false);
+        elements[i].addEventListener('mouseleave', myFunction2, false);
+    }
 });
-
-// ************************************************************************

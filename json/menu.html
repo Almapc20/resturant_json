@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style_new.css">
-    <link rel="stylesheet" href="css/search_style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.0.96/css/materialdesignicons.min.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
@@ -18,7 +16,7 @@
     <header class="container page-head">
         <div class="top-menu">
             <div class="top-menu-aside-right">
-                <img src="images/brand-232x49.png" alt="" width="232" height="49">
+                <img src="../images/brand-232x49.png" alt="" width="232" height="49">
             </div>
             <div class="top-menu-aside-left">
                 <ul class="list-links">
@@ -29,10 +27,10 @@
                             </div>
                             <div class="unit-left">
                                 <a href="#" class="link link-default">
-                                        ملایر، خیابان شهدا 
-                                        <br>
-                                        مجتمع آرین، طبقه 3
-                                    </a>
+                                    ملایر، خیابان شهدا 
+                                    <br>
+                                    مجتمع آرین، طبقه 3
+                                </a>
                             </div>
                         </div>
                     </li>
@@ -91,20 +89,19 @@
                     <a class="link" href="#">منو</a>
                 </li>
                 <li>
-                    <a class="link" href="search-result.html">جستجو</a>
+                    <a class="link" href="#">صفحات</a>
                 </li>
                 <li>
                     <a class="link" href="#">گالری</a>
                 </li>
                 <li>
-                    <a class="link" href="contact.html">تماس با ما</a>
+                    <a class="link" href="contacts.html">تماس</a>
                 </li>
                 <li>
-                    <a class="link" href="register.html">عضویت</a>
+                    <a class="link" href="#">اخبار</a>
                 </li>
             </ul>
             <div class="navbar-shop">
-
                 <a href="#" class="link link-shop link-default">
                     <span class="icon icon-sm mdi mdi-cart-outline"></span>
                     <span class="text-white">(2)</span>
@@ -113,57 +110,36 @@
         </div>
     </div>
     <!-- End Header -->
-    <section>
-
-        <div id="slider" class="slider">
-            <div id="slide-one">
-                <div class="slider-text">
-
-                    <h3>محبوب شما</h3>
-                    <h1>خدمات ارسال غذا</h1>
-                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط</p>
-                    <a href="#" class="text-middle"> سفارش آنلاین</a>
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Welcome -->
-    <section class="section-padding">
-        <div class="text-center">
-            <div class="welcome-info">
-                <h3>به سایت ما خوش آمدید</h3>
-                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد</p>
-            </div>
-        </div>
-    </section>
-    <div id="test-box">
-
+    <!-- Banner -->
+    <div class="banner">
+        <h1 id="food_title1">عنوان گروه غذا</h1>
+        <ul class="breadcrumbs">
+            <li>
+                <a href="">خانه</a>
+            </li>
+            <li>
+                <a href="">منو</a>
+            </li>
+            <li id="food_title2">
+                عنوان گروه غذا
+            </li>
+        </ul>
     </div>
-    <!-- End Welcome -->
-    <!-- Main Menu -->
-    <section class="bg-image-6">
-        <div class="container main-food-box text-center">
-            <h3>منوی غذای ما</h3>
-            <div class="main-foods" id="main-foods">
-
-                <!-- <div class="food-box">
-                    <img src="images/sushi-7-310x260.png">
-                    <div class="caption">
-                        <h5 class="title">
-                            <a href="menu.html?group=0" class="link-white">sssssss</a>
-                        </h5>
-                    </div>
-                </div> -->
-
+    <!-- End Banner -->
+    <!-- Product Menu -->
+    <div id="main-box-product-menu">
+        <div>
+            <div class="product-menu-info">
+                <ul id="food_list">
+                </ul>
             </div>
         </div>
-    </section>
-    <!-- End Main Menu -->
+    </div>
+    <!-- Product Menu -->
 
-    <script src="js/myscript1.js"></script>
+
     <script src="js/myscript.js"></script>
-    <script src="js/search_script.js"></script>
+    <script src="js/myscript2.js"></script>
 </body>
 
 </html>
