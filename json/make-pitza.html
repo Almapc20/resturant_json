@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تهیه پیتزا سفارشی - رستوران ما</title>
+    <link rel="stylesheet" href="css/style_new.css">
+    <link rel="stylesheet" href="css/make-pitza.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.0.96/css/materialdesignicons.min.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body onscroll="ChangeScrollY()">
+    <!-- Header -->
+    <header class="container page-head">
+        <div class="top-menu">
+            <div class="top-menu-aside-right">
+                <img src="images/brand-232x49.png" alt="" width="232" height="49">
+            </div>
+            <div class="top-menu-aside-left">
+                <ul class="list-links">
+                    <li class="list-item">
+                        <div class="unit-horizontal">
+                            <div class="unit-right">
+                                <span class="icon icon-circle icon-gray-dark icon-xs mdi mdi-map-marker text-middle"></span>
+                            </div>
+                            <div class="unit-left">
+                                <a href="#" class="link link-default">
+                                    ملایر، خیابان شهدا 
+                                    <br>
+                                    مجتمع آرین، طبقه 3
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div class="unit-horizontal">
+                            <div class="unit-right">
+                                <span class="icon icon-circle icon-gray-dark icon-xs mdi mdi-phone text-middle"></span>
+                            </div>
+                            <div class="unit-left">
+                                <a href="callto:#" class="link link-default">
+                                    989123456789+
+                                    <br>
+                                    شنبه تا پنجشنبه: 8 صبح - 10 شب
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <ul class="list-inline ">
+                            <li>
+                                <a href="#" class="link link-silver-light">
+                                    <span class="icon icon-md-mod-1 mdi mdi-instagram"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="link link-silver-light">
+                                    <span class="icon icon-md-mod-1 mdi mdi-facebook"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="link link-silver-light">
+                                    <span class="icon icon-md-mod-1 mdi mdi-twitter"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="link link-silver-light">
+                                    <span class="icon icon-md-mod-1 mdi mdi-linkedin"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <div class="navbar-box" id="navbar-box">
+        <div class="navbar container" id="navbar">
+            <ul class="navbar-nav">
+                <li>
+                    <a class="link" href="index1.html">خانه</a>
+                </li>
+                <li>
+                    <a class="link" href="about.html">درباره ما</a>
+                </li>
+                <li>
+                    <a class="link" href="menu.html">منو</a>
+                </li>
+                <li>
+                    <a class="link" href="search-result.html">جستجو</a>
+                </li>
+                <li>
+                    <a class="link" href="#">گالری</a>
+                </li>
+                <li class="active">
+                    <a class="link active" href="make-pizza.html">تهیه پیتزا</a>
+                </li>
+                <li>
+                    <a class="link" href="contact.html">تماس با ما</a>
+                </li>
+                <li>
+                    <a class="link" href="register.html">عضویت</a>
+                </li>
+            </ul>
+            <div class="navbar-shop">
+                <a href="#" class="link link-shop link-default">
+                    <span class="icon icon-sm mdi mdi-cart-outline"></span>
+                    <span class="text-white">(2)</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- Pizza Maker Section -->
+    <section class="section-padding">
+        <div class="container-pitza">
+            <h1 class="text-center section-title">پیتزای سفارشی خود را بسازید</h1>
+            <p class="text-center section-subtitle">مواد مورد علاقه خود را انتخاب و روی پیتزا بکشید</p>
+            
+            <div class="pizza-maker-container">
+                <!-- Left Column: Ingredients -->
+                <div class="ingredients-column">
+                    <h3 class="column-title">مواد تشکیل دهنده</h3>
+                    
+                    
+                    
+                    <div class="ingredient-section">
+                        <h4 class="section-title">سس‌ها</h4>
+                        <div class="ingredients-list" id="sauces-list">
+                            <!-- Sauces will be loaded here -->
+                        </div>
+                    </div>
+                    
+                    <div class="ingredient-section">
+                        <h4 class="section-title">پنیرها</h4>
+                        <div class="ingredients-list" id="cheeses-list">
+                            <!-- Cheeses will be loaded here -->
+                        </div>
+                    </div>
+                    
+                    <div class="ingredient-section">
+                        <h4 class="section-title">مواد اضافی</h4>
+                        <div class="categories" id="toppings-categories">
+                            <!-- Topping categories will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Middle Column: Pizza Canvas -->
+                <div class="pizza-column">
+                    <h3 class="column-title">پیتزای شما</h3>
+                    <div class="pizza-canvas-container">
+                        <div class="pizza-canvas" id="pizza-canvas">
+                            <div class="pizza-base" id="pizza-base">
+                                <img src="./images/khamir.jpg" alt="پیتزا پایه" class="pizza-base-image">
+                            </div>
+                            <!-- Dropped ingredients will appear here -->
+                        </div>
+                        <div class="pizza-controls">
+                            <button class="btn-clear" id="clear-pizza">
+                                <i class="mdi mdi-delete"></i> پاک کردن همه
+                            </button>
+                            <button class="btn-reset" id="reset-pizza">
+                                <i class="mdi mdi-refresh"></i> شروع مجدد
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Column: Summary -->
+                <div class="summary-column">
+                    <h3 class="column-title">خلاصه سفارش</h3>
+                    <div class="order-summary">
+                        <div class="summary-item">
+                            <span>خمیر:</span>
+                            <span id="selected-crust">انتخاب نشده</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>سس:</span>
+                            <span id="selected-sauce">انتخاب نشده</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>پنیر:</span>
+                            <span id="selected-cheese">انتخاب نشده</span>
+                        </div>
+                        <div class="summary-items-list" id="selected-toppings-list">
+                            <div class="summary-item">
+                                <span>مواد اضافی:</span>
+                                <span>هیچکدام</span>
+                            </div>
+                        </div>
+                        
+                        <div class="summary-totals">
+                            <div class="total-item">
+                                <span>قیمت کل:</span>
+                                <span class="price" id="total-price">0 تومان</span>
+                            </div>
+                            <div class="total-item">
+                                <span>کالری کل:</span>
+                                <span class="calories" id="total-calories">0 کالری</span>
+                            </div>
+                        </div>
+                        
+                        <div class="action-buttons">
+                            <button class="btn-order" id="btn-order">
+                                <i class="mdi mdi-cart"></i> افزودن به سبد خرید
+                            </button>
+                            <button class="btn-save" id="btn-save">
+                                <i class="mdi mdi-content-save"></i> ذخیره پیتزا
+                            </button>
+                        </div>
+                        
+                        <div class="pizza-name">
+                            <input type="text" id="pizza-name-input" placeholder="نامی برای پیتزای خود انتخاب کنید">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructions -->
+    <section class="instructions-section">
+        <div class="container-pitza">
+            <h3 class="text-center">راهنمای استفاده</h3>
+            <div class="instructions">
+                <div class="instruction-item">
+                    <i class="mdi mdi-hand-pointing-up"></i>
+                    <p>مواد را از ستون سمت چپ انتخاب کنید</p>
+                </div>
+                <div class="instruction-item">
+                    <i class="mdi mdi-drag"></i>
+                    <p>مواد را نگه دارید و روی پیتزا بکشید</p>
+                </div>
+                <div class="instruction-item">
+                    <i class="mdi mdi-map-marker"></i>
+                    <p>در محل مورد نظر رها کنید</p>
+                </div>
+                <div class="instruction-item">
+                    <i class="mdi mdi-eye"></i>
+                    <p>تغییرات را در ستون راست مشاهده کنید</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/myscript.js"></script>
+    <script src="js/make-pitza.js"></script>
+</body>
+</html>
